@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Admin Panel</div>
+      <ul class="nav-links">
+        <li><a href="/pages/products.html">Products</a></li>
+        <li><a href="/pages/orders.html">Orders</a></li>
+        <li><a href="/pages/categories.html">Categories</a></li>
+        <li><a href="/pages/sizes.html">Sizes</a></li>
+        <li><a href="/index.html" id="logoutBtn">Log out</a></li>
+        <!-- Close Button for Mobile Menu -->
+        <div class="close-btn">&#10005;</div>
+      </ul>
+      <!-- Burger Button -->
+      <div class="burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <h2>Manage Sizes</h2>
+
+    <!-- 🔹 Form to Add or Edit Size -->
+    <form id="sizeForm" style="text-align: center">
+      <input type="hidden" id="sizeId" />
+      <!-- Stores size ID when editing -->
+      <label>Size Name: <input type="text" id="sizeName" required /></label>
+      <button type="submit">Add Size</button>
+    </form>
+
+    <h3>All Sizes</h3>
+    <ul id="sizeList"></ul>
+    <script src="/js/sizes.js"></script>
+    <script src="/js/burger_menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Admin Panel</div>
+      <ul class="nav-links">
+        <li><a href="/pages/products.html">Products</a></li>
+        <li><a href="/pages/orders.html">Orders</a></li>
+        <li><a href="/pages/categories.html">Categories</a></li>
+        <li><a href="/pages/sizes.html">Sizes</a></li>
+        <li><a href="/index.html" id="logoutBtn">Log out</a></li>
+        <!-- Close Button for Mobile Menu -->
+        <div class="close-btn">&#10005;</div>
+      </ul>
+      <!-- Burger Button -->
+      <div class="burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <h2>Submit Product</h2>
+    <form id="productForm">
+      <input type="text" id="name" placeholder="Product Name" required /><br />
+      <input type="number" id="price" placeholder="Price" required /><br />
+      <input type="text" id="color" placeholder="Color" required /><br />
+      <textarea id="details" placeholder="Product Details" required></textarea
+      ><br />
+      <input
+        type="number"
+        id="categoryId"
+        placeholder="Category ID"
+        required
+      /><br />
+
+      <label>Upload 4 Images:</label>
+      <input type="file" id="imageUpload" multiple required /><br />
+      <div id="imagePreview"></div>
+
+      <label>Front Image:</label>
+      <input type="file" id="frontImageUpload" required /><br />
+      <div style="position: relative; display: inline-block">
+        <img id="frontImagePreview" style="max-width: 100px; display: none" />
+      </div>
+      <br />
+
+      <label>Sizes (comma-separated IDs):</label>
+      <input
+        type="text"
+        id="sizeIds"
+        placeholder="e.g., 1,2,3"
+        required
+      /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Product List</h2>
+    <table id="productTable" border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Color</th>
+          <th>Category ID</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productList"></tbody>
+    </table>
+
+    <script src="/js/products.js"></script>
+    <script src="/js/burger_menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Orders</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Admin Panel</div>
+      <ul class="nav-links">
+        <li><a href="/pages/products.html">Products</a></li>
+        <li><a href="/pages/orders.html">Orders</a></li>
+        <li><a href="/pages/categories.html">Categories</a></li>
+        <li><a href="/pages/sizes.html">Sizes</a></li>
+        <li><a href="/index.html" id="logoutBtn">Log out</a></li>
+        <!-- Close Button for Mobile Menu -->
+        <div class="close-btn">&#10005;</div>
+      </ul>
+      <!-- Burger Button -->
+      <div class="burger-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h2>Manage Orders</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Products</th>
+          </tr>
+        </thead>
+        <tbody id="orderTable">
+          <!-- Orders will be loaded here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="/js/orders.js"></script>
+    <script src="/js/burger_menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+form,
+#messagesContainer {
+  width: 50%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.edit-btn {
+  background-color: #4caf50;
+}
+
+.delete-btn {
+  background-color: #f44336;
+}
+
+.message-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px 30px;
+  position: relative;
+}
+
+.products_from {
+  width: 50%;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-top: 100px;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+}
+
+.container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10% auto;
+}
+
+.container h2 {
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin: 1rem 0;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px;
+  background: #667eea;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #5563c1;
+}
+
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background: #007bff;
+  color: white;
+}
+
+td img {
+  width: 50px;
+  border-radius: 5px;
+}
+
+/* Action Buttons */
+button.edit-btn {
+  background: #28a745;
+}
+
+button.edit-btn:hover {
+  background: #218838;
+}
+
+button.delete-btn {
+  background: #dc3545;
+}
+
+button.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Navbar Burger Menu */
+.navbar .burger-btn {
+  display: none;
+  cursor: pointer;
+}
+
+.navbar .burger-btn span {
+  background-color: white;
+  display: block;
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+}
+
+.navbar .nav-links {
+  display: flex;
+}
+
+.navbar.active .nav-links {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  width: 250px; /* Menu width */
+  height: 100vh; /* Full height */
+  padding-top: 60px; /* Adjust to place links under the logo */
+  z-index: 10;
+}
+
+.navbar.active .nav-links a {
+  display: block;
+  padding: 15px;
+  text-align: left;
+}
+
+.navbar.active .nav-links .close-btn {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* By default, hide the close button */
+.navbar .nav-links .close-btn {
+  display: none;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .navbar .nav-links {
+    display: none;
+  }
+
+  .navbar .burger-btn {
+    display: block;
+  }
+
+  .nav-links a {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .navbar .logo {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust Table Font Size */
+  table {
+    font-size: 12px; /* Smaller font size on smaller devices */
+  }
+
+  th,
+  td {
+    padding: 6px; /* Adjust padding for better mobile view */
+  }
+}
+
+@media (max-width: 400px) {
+  table {
+    font-size: 10px; /* Further reduce font size on very small devices */
+  }
+
+  th,
+  td {
+    padding: 4px; /* Reduce padding for tiny screens */
+  }
+}
