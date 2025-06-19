@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://45.130.148.64:8080/api/v1/sizes"; // Base URL
+const apiBaseUrl = "http://api.marikat.uz/api/v1/sizes"; // Base URL
 let accessToken = localStorage.getItem("accessToken");
 
 // **🔹 Load All Sizes**

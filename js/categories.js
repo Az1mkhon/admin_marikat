@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://45.130.148.64:8080/api/v1/";
+const apiBaseUrl = "http://api.marikat.uz/api/v1/";
 
 const categoryForm = document.getElementById("categoryForm");
 const categoryInput = document.getElementById("category");
