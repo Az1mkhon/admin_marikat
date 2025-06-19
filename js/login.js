@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://api.marikat.uz/api/v1/"; // Change to HTTPS if possible
+const apiBaseUrl = "https://api.marikat.uz/api/v1/"; // Change to HTTPS if possible
 
 // Login Event Listener
 const loginForm = document.getElementById("loginform");

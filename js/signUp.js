@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://api.marikat.uz/api/v1/";
+const apiBaseUrl = "https://api.marikat.uz/api/v1/";
 
 // Sign Up Event Listener
 const signupForm = document.getElementById("signupform");

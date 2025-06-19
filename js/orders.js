@@ -1,4 +1,4 @@
-const apiBaseUrl = "http://api.marikat.uz/api/v1/";
+const apiBaseUrl = "https://api.marikat.uz/api/v1/";
 
 const orderTable = document.getElementById("orderTable");
 

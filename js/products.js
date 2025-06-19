@@ -4,7 +4,7 @@ const frontImageUploadInput = document.getElementById("frontImageUpload");
 const frontImagePreview = document.getElementById("frontImagePreview");
 let selectedImages = [];
 let accessToken = localStorage.getItem("accessToken");
-const apiBase = "http://api.marikat.uz/api/v1/";
+const apiBase = "https://api.marikat.uz/api/v1/";
 
 function addRemoveFrontButton() {
   const existing = document.getElementById("removeFrontBtn");
